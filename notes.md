@@ -67,3 +67,78 @@ Select a bundler:
   - Faster loading production code
 - JSPM
 
+## Source Maps
+
+Source maps allow you to debug transpiled and minimified code.
+- Only downloaded when developer tools are opened.
+- Specified in the webpack.config.dev.js file: `devtool: 'inline-source-map'`.  
+- There are other options than just `inline-source-map`.
+
+Tip:
+- Write `debugger` in the line of code you want the browser to pause at.
+
+## Linting
+
+Popular linting `ESLint`.
+
+Decisions:
+- Config format: separate file or inside `package.json`
+- Which built-in rules?
+- Warnings or errors?
+- Which plugins?
+  - Include plugin for React
+- Use preset instead?
+  - Instead of the above decisions choose a preset (recommended options)
+
+ESLint runs automatically with `watch`.
+
+## Testing and continous Integration
+
+Testing framework:
+- Mocha (Recommended)
+- Jasmine (builtin assertion library)
+- Tape
+- QUnit
+- AVA
+- Jest (wrapper around Jasmine)
+
+Assertion library:
+- Chai
+- Should
+- Expect
+
+Helper library:
+- JSDOM:
+  - Simulate the browser's DOM
+- Cherrio
+  - jQuery for the server
+  - Queyr vritual DOM using jQuery selectors
+
+Where to run tests:
+- Browser
+  - Karma, Testem
+- Headless browser (no UI)
+  - PhantomJS
+- In-memory DOM
+  - JSDOM
+
+Where do test files belong:
+- Centralized (separate folder)
+  - Less "noise" in src folder
+  - Deploymnet confusion
+  - Inertia
+- Alongside
+  - Easy imports
+  - Clear visibility
+  - Convenient to open
+  - No recreating folder structure
+  - Easily move files
+
+When should tests run?
+- For Unit tests should run every time you hit save
+  - Rapid feedback
+  - Facilitates TDD
+  - Automatic = Low friction
+  - Increases visibility
+
+
