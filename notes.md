@@ -103,7 +103,7 @@ Testing framework:
 - Jest (wrapper around Jasmine)
 
 Assertion library:
-- Chai
+- Chai (Recommeded)
 - Should
 - Expect
 
@@ -140,5 +140,3 @@ When should tests run?
   - Facilitates TDD
   - Automatic = Low friction
   - Increases visibility
-
-
