@@ -140,3 +140,39 @@ When should tests run?
   - Facilitates TDD
   - Automatic = Low friction
   - Increases visibility
+
+## HTTP Calls
+
+Node:
+- http
+- request
+
+Browser:
+- XMLHttpRequest
+- jQuery
+- Framework-based (Angular/React)
+- Fetch
+
+Node & Browser:
+- isomorphic-fetch
+- xhr
+- SuperAgent
+- Axios
+
+Centralize API calls:
+- Configure all calls
+- Handle preloader logic
+- Handle errors
+- Single seam for mocking
+
+## Mocking HTTP Calls
+
+- Nock
+- Static JSON
+- Create development webserver
+  - api-mock
+  - JSON server
+  - JSON Schema faker
+  - Browsersync
+  - Express, etc.
+
