@@ -176,3 +176,16 @@ Centralize API calls:
   - Browsersync
   - Express, etc.
 
+## Project Structure
+
+Tips:
+- JS belongs in a .js file
+  - Avoid dynamically generating JavaScript logic. Dynamically generate JSON instead.
+- Considering organizing by feature
+  - Instead of file type
+- Extract logic to POJOs
+  - Plain Old JavaScript objects
+  - Pure logic
+  - No framework-specific code
+
+  
