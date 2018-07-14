@@ -188,4 +188,32 @@ Tips:
   - Pure logic
   - No framework-specific code
 
-  
+## Production Build
+
+### Minification
+
+Speeding page loads:
+- Shortens variable and function names
+- Removes comments
+- Removes whitespace and new lines
+- Dead code elimination / tree-shaking
+- Debug via sourcemaps
+
+### Bundle Splitting
+
+Advantages:
+- Speed initial page load
+- Avoid re-downloading all libraries
+
+Bundle splitting with webpack.
+
+### Cache Busting
+
+Advantages:
+- Save HTTP Requests
+- Force request for latest version
+
+Plan:
+1. Hash bundle filename
+2. Generate HTML dynamically
+
